@@ -5,25 +5,19 @@ body {
     font-family: 'Poiret One', cursive;
 }
 
-.container-fluid.no-gutter {
-    padding: 0px;
-}
-
-.container-fluid.no-gutter .row [class*='col-']:not(:first-child),
-.container-fluid.no-gutter .row [class*='col-']:not(:last-child) {
-    padding-right: 0;
-    padding-left: 0;
-}
-
 .row {
     margin-left: 0;
     margin-right: 0;
 }
 
+.header {
+    padding: 50px;
+}
+
 .intro {
     height: 100%;
     width: 100%;
-    padding-top: 100px;
+    padding: 20px 100px 50px 100px;
 }
 
 .intro-body {
@@ -37,6 +31,21 @@ body {
 
 .item-wrap {
     padding: 5px;
+}
+
+.div-img {
+    padding: 30px 0px;
+}
+
+.but-cust {
+    border-radius: 0px;
+    border-color: #000;
+    background-image: linear-gradient(to bottom, #fff 0, #FFFFFF 100%);
+}
+
+.but-cust:hover,
+.but-cust:focus {
+    background-color: #fff;
 }
 
 

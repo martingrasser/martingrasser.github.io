@@ -1,3 +1,4 @@
+// To handle isotopeJS
 $(document).ready(function() {
     /* activate jquery isotope */
     var $container = $('#posts').isotope({
@@ -7,7 +8,7 @@ $(document).ready(function() {
 
     $(window).smartresize(function() {
         $container.isotope({
-            columnWidth: '.col-sm-3'
+            columnWidth: '.col-md-4'
         });
     });
 
