@@ -20,3 +20,18 @@ $(document).ready(function() {
         $container.isotope({ filter: filterValue });
     });
 });
+
+// // scroll reveal
+// window.sr = ScrollReveal();
+// var fooContainer = document.getElementById('posts');
+
+// var fooReveal = {
+//     viewFactor: 0.15,
+//     duration: 800,
+//     distance: "0px",
+//     scale: 0.1,
+//     origin: 'bottom'
+// };
+
+
+// sr.reveal('.div-img', { container: fooContainer }, fooReveal);
