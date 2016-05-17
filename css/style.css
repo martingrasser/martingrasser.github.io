@@ -1,0 +1,91 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /*font-family: 'Poiret One', cursive;*/
+    font-family: Arial;
+}
+
+.fade{
+    -webkit-transition: opacity .0s linear;
+    -o-transition: opacity .0s linear;
+    transition: opacity .0s linear
+}
+
+.header {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.intro {
+    padding-top: 100px;
+}
+
+.item {
+    border: none;
+}
+
+.item-wrap {
+    padding: 5px;
+}
+
+.div-img {
+    padding: 30px 0px;
+}
+
+#posts img {
+    margin: 0 auto;
+}
+
+.but-cust {
+    border-radius: 0px;
+    border-color: #000;
+    background-image: linear-gradient(to bottom, #fff 0, #FFFFFF 100%);
+}
+
+.but-cust:hover,
+.but-cust:focus {
+    background-color: #fff;
+}
+
+/*.div-img > img {
+    height: auto;
+    max-width: 100%;
+    padding: 20px;
+}*/
+
+
+/* Isotope Transitions
+------------------------------- */
+
+.isotope,
+.isotope .item {
+    /*change this to change animation interval*/
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: top, left, opacity;
+    transition-property: transform, opacity;
+}
+
+
+/* responsive media queries */
+
+@media (max-width: 768px) {}
+
