@@ -1,18 +1,25 @@
 // To handle isotopeJS
-$(document).ready(function() {
+$(window).load(function() {
     /* activate jquery isotope */
     var $container = $('#posts').isotope({
         itemSelector: '.item',
-        isFitWidth: true
+        // isFitWidth: true,
+        layoutMode: 'fitRows'
     });
 
-    $(window).smartresize(function() {
-        $container.isotope({
-            columnWidth: '.col-md-4'
-        });
-    });
-
+    // debugger;
+    // var delay = 5000; //2 second
+    // setTimeout(function() {
+        //your code to be executed after 1 second
+    // }, delay);
     $container.isotope({ filter: '*' });
+    // debugger;
+    // $(window).smartresize(function() {
+    //     $container.isotope({
+    //         columnWidth: '.clearfix'
+    //     });
+    // });
+
 
     // filter items on button click
     $('#filters').on('click', 'button', function() {
