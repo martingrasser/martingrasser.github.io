@@ -5,6 +5,9 @@ body {
 }
 
 .intro {
+    background: url('../img/14.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     height: calc(100% - 50px);
     width: 100%;
     display: table;
