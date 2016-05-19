@@ -10,7 +10,7 @@ $(window).load(function() {
     // debugger;
     // var delay = 5000; //2 second
     // setTimeout(function() {
-        //your code to be executed after 1 second
+    //your code to be executed after 1 second
     // }, delay);
     $container.isotope({ filter: '*' });
     // debugger;

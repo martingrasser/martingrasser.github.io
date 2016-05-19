@@ -40,39 +40,25 @@
 </head>
 
 <body>
-    <div class="container intro">
-        <div class="row intro-body text-center">
-            <!-- <img class="dp" src="img/mg.jpg"> -->
-            <!-- <h2>Martin Grasser</h2> -->
-            <!-- <h6>Art / Design / Photography</h6> -->
-            <!-- <br> -->
-            <!-- <br> -->
-            <a href="projects.html" class="but-cust">
-                <button class="but-cust btn btn-default">View Work</button>
-            </a>
+    <div id="pic" class="banner text-center">
+        <div class="banner_link">
+            <a href="projects.html" class="hvr-float-shadow">View Work</a>
         </div>
     </div>
-    <!-- <footer class="container text-center">
-        <ul class="list-inline">
-            <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-medium"></i></a>
-            </li>
-        </ul>
-    </footer> -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script>
+    $(function() {
+        $('.banner_link a').hover(function() {
+            $('#pic').addClass('blur');
+        }, function() {
+            $('#pic').removeClass('blur');
+        });
+    });
+    </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
     (function(b, o, i, l, e, r) {
