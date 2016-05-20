@@ -14,7 +14,7 @@ body {
 
 .header {
     padding: 50px;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .intro {
@@ -43,9 +43,13 @@ body {
     background-image: linear-gradient(to bottom, #fff 0, #FFFFFF 100%);
 }
 
-.but-cust:hover,
-.but-cust:focus {
+.but-cust:hover {
     background-color: #fff;
+}
+
+.but-cust:active, .but-cust.active {
+    background-color: #000!important;
+    color: #fff!important;
 }
 
 /*.div-img > img {
@@ -62,10 +66,10 @@ body {
 .isotope .item {
     /*change this to change animation interval*/
     -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -ms-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
+    -moz-transition-duration: 0.0s;
+    -ms-transition-duration: 0.0s;
+    -o-transition-duration: 0.0s;
+    transition-duration: 0.0s;
 }
 
 .isotope {
@@ -89,3 +93,14 @@ body {
 
 @media (max-width: 768px) {}
 
+footer {
+    height: 100px;
+}
+
+footer .list-inline {
+    margin-top: 20px;
+}
+
+footer a {
+    color: #000;
+}
