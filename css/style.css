@@ -49,8 +49,9 @@ body {
 }
 
 .but-cust:active, .but-cust.active {
-    background-color: #000!important;
-    color: #fff!important;
+    background-color: #e1e1e1!important;
+    color: #000!important;
+    border-color: #000;
 }
 
 /*.div-img > img {
@@ -89,11 +90,6 @@ body {
     transition-property: transform, opacity;
 }
 
-
-/* responsive media queries */
-
-@media (max-width: 768px) {}
-
 footer {
     height: 100px;
 }
@@ -104,4 +100,29 @@ footer .list-inline {
 
 footer a {
     color: #000;
+}
+
+/* responsive media queries */
+
+/* responsive media queries */
+
+@media (max-width: 540px) {
+    .header{
+        padding: 10px;
+    }
+    .but-cust{
+        margin: 4px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header{
+        padding: 25px;
+    }
+    .but-cust{
+        margin: 2px;
+    }
+    .btn{
+        padding: 3px 6px 3px 6px;
+    }
 }
