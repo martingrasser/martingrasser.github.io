@@ -46,6 +46,8 @@ body {
     text-shadow: none!important;
     box-shadow: none!important;
     color: grey;
+    padding: 0px;
+    margin: 8px;
 }
 
 .but-cust:hover {
@@ -102,31 +104,4 @@ footer .list-inline {
 
 footer a {
     color: #666;
-}
-
-
-/* responsive media queries */
-
-
-/* responsive media queries */
-
-@media (max-width: 540px) {
-    .header {
-        padding: 10px;
-    }
-    .but-cust {
-        margin: 4px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .header {
-        padding: 25px;
-    }
-    .but-cust {
-        margin: 2px;
-    }
-    .btn {
-        padding: 3px 6px 3px 6px;
-    }
 }
