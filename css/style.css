@@ -105,3 +105,19 @@ footer .list-inline {
 footer a {
     color: #666;
 }
+
+.mfp-title{
+    color: #484747;
+}
+
+.mfp-figure small {
+    color: #828282;
+}
+
+.mfp-arrow {
+    opacity: 0.20;
+}
+
+.mfp-arrow:hover, .mfp-arrow:focus {
+    opacity: 0.40;
+}

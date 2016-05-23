@@ -14,7 +14,17 @@
     .but-cust {
         margin: 4px;
     }
+    /*left-right button*/
+    .mfp-arrow {
+        bottom: 0;
+        top: initial;
+    }
+    .mfp-arrow-left {
+        right: 0;
+        left: initial;
+    }
 }
+
 
 /* Small Devices, Tablets */
 
@@ -31,6 +41,13 @@
 /* Medium Devices, Desktops */
 
 @media only screen and (min-width: 992px) {}
+
+@media only screen and (max-width: 900px) {
+    .mfp-arrow {
+        -webkit-transform: scale(0.50);
+        transform: scale(0.50);
+    }
+}
 
 
 /* Large Devices, Wide Screens */
@@ -49,4 +66,3 @@
 }
 
 @media only screen and (min-width: 1200px) {}
-
