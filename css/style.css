@@ -106,7 +106,7 @@ footer a {
     color: #666;
 }
 
-.mfp-title{
+.mfp-title {
     color: #484747;
 }
 
@@ -118,6 +118,11 @@ footer a {
     opacity: 0.20;
 }
 
-.mfp-arrow:hover, .mfp-arrow:focus {
+.mfp-arrow:hover,
+.mfp-arrow:focus {
     opacity: 0.40;
+}
+
+.mfp-figure:after {
+    box-shadow: none;
 }
