@@ -19,7 +19,7 @@
 [class^="hvr-"] {
     margin: .4em;
     padding: 1em;
-    cursor: pointer;
+    cursor: default;
     background: #e1e1e1;
     text-decoration: none;
     color: #666;

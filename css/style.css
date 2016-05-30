@@ -61,7 +61,7 @@ body {
     /*background-color: #e1e1e1!important;*/
     color: #000!important;
     border-color: transparent;
-    border-bottom: 0.5px solid #7A7C7F;
+    border-bottom: 2px solid #000;
 }
 
 
@@ -106,8 +106,22 @@ footer a {
     color: #666;
 }
 
+a:focus {
+    outline: none;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+
 .mfp-title {
     color: #484747;
+    font-size: 10pt;
 }
 
 .mfp-figure small {
@@ -125,4 +139,9 @@ footer a {
 
 .mfp-figure:after {
     box-shadow: none;
+}
+
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+    color: #bbb;
 }

@@ -23,6 +23,9 @@
         right: 0;
         left: initial;
     }
+    .mfp-arrow {
+        opacity: 0;
+    }
 }
 
 
