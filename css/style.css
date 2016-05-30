@@ -135,6 +135,7 @@ a:focus {
 .mfp-arrow:hover,
 .mfp-arrow:focus {
     opacity: 0.40;
+    display: none;
 }
 
 .mfp-figure:after {
