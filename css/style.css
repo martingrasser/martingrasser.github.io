@@ -1,43 +1,46 @@
-html,
-body {
+html, body {
     height: 100%;
     width: 100%;
     /*font-family: 'Poiret One', cursive;*/
     font-family: Arial;
 }
 
+/*navbar fix*/
+
+.affix {
+    top: 0;
+    width: 100%;
+}
+.navbar {
+    z-index: 1000;
+}
+header {
+    background: greenyellow;
+}
 .fade {
     -webkit-transition: opacity .0s linear;
     -o-transition: opacity .0s linear;
     transition: opacity .0s linear
 }
-
 .header {
-    padding: 50px;
     background-color: transparent;
 }
-
 .intro {
     padding-top: 100px;
 }
-
 .item {
     border: none;
 }
-
 .item-wrap {
     padding: 5px;
 }
-
 .mfp-bg {
     background-color: #fff!important;
 }
-
 #posts img {
     margin: 0 auto;
     padding: 30px;
 }
-
 .but-cust {
     border-radius: 0px;
     background-image: none!important;
@@ -49,27 +52,22 @@ body {
     padding: 0px;
     margin: 8px;
 }
-
 .but-cust:hover {
     background-color: transparent;
     color: #000;
     border-color: transparent;
 }
-
-.but-cust:active,
-.but-cust.active {
+.but-cust:active, .but-cust.active {
     /*background-color: #e1e1e1!important;*/
     color: #000!important;
     border-color: transparent;
     border-bottom: 2px solid #000;
 }
 
-
 /* Isotope Transitions
 ------------------------------- */
 
-.isotope,
-.isotope .item {
+.isotope, .isotope .item {
     /*change this to change animation interval*/
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.0s;
@@ -77,7 +75,6 @@ body {
     -o-transition-duration: 0.0s;
     transition-duration: 0.0s;
 }
-
 .isotope {
     -webkit-transition-property: height, width;
     -moz-transition-property: height, width;
@@ -85,7 +82,6 @@ body {
     -o-transition-property: height, width;
     transition-property: height, width;
 }
-
 .isotope .item {
     -webkit-transition-property: -webkit-transform, opacity;
     -moz-transition-property: -moz-transform, opacity;
@@ -93,56 +89,59 @@ body {
     -o-transition-property: top, left, opacity;
     transition-property: transform, opacity;
 }
-
 footer {
     height: 100px;
 }
-
 footer .list-inline {
     margin-top: 20px;
 }
-
 footer a {
     color: #666;
 }
-
 a:focus {
     outline: none;
 }
-
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn.active.focus {
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
     outline: none;
 }
-
 .mfp-title {
     color: #484747;
     font-size: 10pt;
 }
-
 .mfp-figure small {
     color: #828282;
 }
-
 .mfp-arrow {
     opacity: 0.20;
 }
-
-.mfp-arrow:hover,
-.mfp-arrow:focus {
-    opacity: 0.40;
-    display: none;
+.mfp-arrow-1 {
+    overflow: visible;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    display: block;
+    outline: none;
+    padding: 0;
+    z-index: 1046;
+    box-shadow: none;
+    touch-action: manipulation;
+    position: absolute;
+    /*opacity: 0.65;*/
+    margin: 0;
+    top: 50%;
+    margin-top: -55px;
+    width: 90px;
+    height: 110px;
+    -webkit-tap-highlight-color: transparent;
 }
-
+.mfp-arrow-1:hover, .mfp-arrow-1:focus {
+    /*display: none;*/
+    color: purple;
+}
 .mfp-figure:after {
     box-shadow: none;
 }
-
-.mfp-image-holder .mfp-close,
-.mfp-iframe-holder .mfp-close {
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
     color: #bbb;
 }

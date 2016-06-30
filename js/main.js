@@ -21,12 +21,71 @@ $(window).load(function() {
     // });
 
 
+
+
+
+
+
+
+
+
+// NEW CODE from **** to ***
+
+// ************
     // filter items on button click
+    $(".home").on('click', function() {
+        $('.active').each( function () {
+            $(this).removeClass('active');
+        });
+        $(".home").addClass('active');
+    });
     $('#filters').on('click', 'button', function() {
-        var filterValue = $(this).attr('data-filter');
+        // var filterValue = $(this).attr('data-filter');
+        var filterValue = "";
+        $('.active').each( function () {
+            filterValue += $(this).attr('data-filter');
+        });
         $container.isotope({ filter: filterValue });
+        if (filterValue !== "*") {
+            $('.home').removeClass('active');
+        }
+        if (filterValue === "") {
+            filterValue = "*";
+            $('.home').addClass('active');
+        }
     });
 });
+// ************
+
+// NEW CODE FOR NAV BAR
+// ************
+
+
+$(function() {
+    $('#nav-wrapper').height($("#nav").height());
+    $('#nav').affix({
+        offset: { top: $('#nav').offset().top }
+    });
+});
+
+// ************
+
+
+
+
+
+
+
+//OLD CODE
+
+
+
+
+
+
+
+
+
 
 // // scroll reveal
 // window.sr = ScrollReveal();

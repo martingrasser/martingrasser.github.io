@@ -9,7 +9,8 @@ $(document).ready(function() {
             enabled: true,
             navigateByImgClick: true,
             preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
-            tCounter: '<span class="mfp-counter"></span>' // markup of counter
+            tCounter: '<span class="mfp-counter"></span>', // markup of counter
+            arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow-1 mfp-arrow-%dir%"><i class="fa fa-arrow-%dir% fa-2x" aria-hidden="true"></i></button>',
         },
         image: {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
