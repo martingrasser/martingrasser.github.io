@@ -24,7 +24,10 @@
         left: initial;
     }
     .mfp-arrow {
-        opacity: 0;
+        opacity: 0!important;
+    }
+    .fa {
+        display: none;
     }
 }
 
