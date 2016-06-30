@@ -15,7 +15,8 @@ html, body {
     z-index: 1000;
 }
 header {
-    background: greenyellow;
+    /*background: greenyellow;*/
+    background: url('../img/orig/15.png')
 }
 .fade {
     -webkit-transition: opacity .0s linear;
