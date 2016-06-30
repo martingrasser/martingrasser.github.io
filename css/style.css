@@ -27,6 +27,7 @@ header {
 }
 .intro {
     padding-top: 100px;
+    min-height: 901px;
 }
 .item {
     border: none;

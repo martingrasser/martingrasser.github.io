@@ -32,6 +32,9 @@
 /* Small Devices, Tablets */
 
 @media only screen and (min-width: 768px) {
+    html {
+        overflow-x: hidden;
+    }
     #filters {
         padding-top: 50px;
     }
@@ -43,9 +46,19 @@
 
 /* Medium Devices, Desktops */
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    html {
+        overflow-x: hidden;
+    }
+    .intro {
+        width: 979px;
+    }
+}
 
 @media only screen and (max-width: 900px) {
+    html {
+        overflow-x: hidden;
+    }
     .mfp-arrow {
         -webkit-transform: scale(0.50);
         transform: scale(0.50);
@@ -56,6 +69,9 @@
 /* Large Devices, Wide Screens */
 
 @media (max-width: 1024px) {
+    html {
+        overflow-x: hidden;
+    }
     .header {
         padding: 25px;
     }
@@ -68,4 +84,13 @@
     }
 }
 
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    html {
+        overflow-x: hidden;
+    }
+    .intro {
+        width: 1010px;
+    }
+}
 @media only screen and (min-width: 1200px) {}
