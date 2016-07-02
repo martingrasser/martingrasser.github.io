@@ -150,4 +150,9 @@ a:focus {
 
 .fa {
     color: #bbb;
+    z-index: -1111;
+}
+
+.fa:hover{
+    color: #333;
 }
