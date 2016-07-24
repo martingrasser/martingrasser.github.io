@@ -11,6 +11,10 @@
     .header {
         padding: 10px;
     }
+    header {
+        height: 30% !important;
+        width: auto;
+    }
     .but-cust {
         margin: 4px;
     }
@@ -37,6 +41,10 @@
 @media only screen and (min-width: 768px) {
     html {
         overflow-x: hidden;
+    }
+    header {
+        height: 40% !important;
+        width: auto;
     }
     #filters {
         padding-top: 50px;
