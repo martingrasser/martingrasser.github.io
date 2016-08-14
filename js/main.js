@@ -37,15 +37,6 @@ $(window).load(function() {
             $(this).addClass('active');
         }
     });
-
-    $("img.lazy").lazyload({
-        event: 'lazylazy',
-        effect: "fadeIn",
-        effectspeed: 500,
-        appear: function() {
-            console.log('loaded image')
-        }
-    });
 });
 
 $(function() {

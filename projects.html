@@ -426,6 +426,16 @@
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+    <script>
+        $("img.lazy").lazyload({
+        event: 'lazylazy',
+        effect: "fadeIn",
+        effectspeed: 500,
+        appear: function() {
+            console.log('loaded image')
+        }
+    });
+    </script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/vendor/jquery.magnific-popup.min.js"></script>
