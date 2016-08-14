@@ -1,40 +1,13 @@
 // To handle isotopeJS
 $(window).load(function() {
-    /* activate jquery isotope */
+
     var $container = $('#posts').isotope({
         itemSelector: '.item',
-        // isFitWidth: true,
         layoutMode: 'fitRows'
     });
-
-    // debugger;
-    // var delay = 5000; //2 second
-    // setTimeout(function() {
-    //your code to be executed after 1 second
-    // }, delay);
     $container.isotope({ filter: '*' });
-    // debugger;
-    // $(window).smartresize(function() {
-    //     $container.isotope({
-    //         columnWidth: '.clearfix'
-    //     });
-    // });
-
-
-
-
-
-
-
-
-
-
-// NEW CODE from **** to ***
-
-// ************
-    // filter items on button click
     $(".home").on('click', function() {
-        $('.active').each( function () {
+        $('.active').each(function() {
             $(this).removeClass('active');
         });
         $(".home").addClass('active');
@@ -42,7 +15,7 @@ $(window).load(function() {
     $('#filters').on('click', 'button', function() {
         // var filterValue = $(this).attr('data-filter');
         var filterValue = "";
-        $('.active').each( function () {
+        $('.active').each(function() {
             filterValue += $(this).attr('data-filter');
         });
         $container.isotope({ filter: filterValue });
@@ -54,12 +27,26 @@ $(window).load(function() {
             $('.home').addClass('active');
         }
     });
+
+    $('#filters .btn').click(function(e) {
+        e.preventDefault();
+        // $('.btn').removeClass('active');
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).addClass('active');
+        }
+    });
+
+    $("img.lazy").lazyload({
+        event: 'lazylazy',
+        effect: "fadeIn",
+        effectspeed: 500,
+        appear: function() {
+            console.log('loaded image')
+        }
+    });
 });
-// ************
-
-// NEW CODE FOR NAV BAR
-// ************
-
 
 $(function() {
     $('#nav-wrapper').height($("#nav").height());
@@ -68,27 +55,12 @@ $(function() {
     });
 });
 
-// ************
-
-
-
-
-
-
-
-//OLD CODE
-
-
-
-
-
-
-
-
-
-
 // // scroll reveal
 // window.sr = ScrollReveal();
+// window.sr = new scrollReveal({
+// viewport: document.getElementByClassName('popup-gallery')
+// });
+// sr.reveal('.item', { duration: 2000 }, 50);
 // var fooContainer = document.getElementById('posts');
 
 // var fooReveal = {

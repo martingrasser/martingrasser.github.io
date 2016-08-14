@@ -38,6 +38,7 @@ header {
 .intro {
     padding-top: 100px;
     min-height: 901px;
+    width: 100%;
 }
 
 .item {

@@ -52,6 +52,10 @@
     .intro {
         padding-top: 50px;
     }
+
+    .col-sm-6 {
+        width: 49.98%;
+    }
 }
 
 
@@ -62,7 +66,8 @@
         overflow-x: hidden;
     }
     .intro {
-        width: 979px;
+        /*width: 979px;*/
+        width: 100%;
     }
 }
 
@@ -101,18 +106,19 @@
         overflow-x: hidden;
     }
     .intro {
-        width: 1020px;
+        /*width: 1020px;*/
+        width: 100%;
     }
 }
 @media only screen and (min-width: 1200px) {
     html {
         overflow-x: hidden;
     }
-    .col-lg-3 {
-        width: 24%;
+    .col-lg-4 {
+        width: 33.32%;
     }
 
     .intro {
-        width: 85.5%;
+        width: 100%;
     }
 }
