@@ -45,22 +45,3 @@ $(function() {
         offset: { top: $('#nav').offset().top }
     });
 });
-
-// // scroll reveal
-// window.sr = ScrollReveal();
-// window.sr = new scrollReveal({
-// viewport: document.getElementByClassName('popup-gallery')
-// });
-// sr.reveal('.item', { duration: 2000 }, 50);
-// var fooContainer = document.getElementById('posts');
-
-// var fooReveal = {
-//     viewFactor: 0.15,
-//     duration: 800,
-//     distance: "0px",
-//     scale: 0.1,
-//     origin: 'bottom'
-// };
-
-
-// sr.reveal('.div-img', { container: fooContainer }, fooReveal);
