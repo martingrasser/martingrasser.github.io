@@ -16,6 +16,10 @@ body {
 
 .navbar {
     z-index: 1000;
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px 40px 0px 40px;
 }
 
 header {
@@ -36,7 +40,7 @@ header {
 }
 
 .main-intro {
-    padding-top: 70px;
+    padding: 100px 0 40px 0;
 }
 
 .intro {
