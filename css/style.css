@@ -19,10 +19,10 @@ body {
 }
 
 header {
-    background: url('../img/comp/bg.jpg') no-repeat;
-    height: 45%;
+    /*background: url('../img/comp/bg.jpg') no-repeat;*/
+    /*height: 40%;*/
     width: auto;
-    background-size: cover;
+    /*background-size: cover;*/
 }
 
 .fade {
@@ -33,6 +33,10 @@ header {
 
 .header {
     background-color: transparent;
+}
+
+.main-intro {
+    padding-top: 70px;
 }
 
 .intro {
