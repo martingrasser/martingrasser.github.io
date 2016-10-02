@@ -2,7 +2,7 @@
 
 @media only screen and (min-width: 320px) {
     .main-intro {
-        padding: 60px 20px 40px 20px;
+        padding: 60px 20px 40px 30px;
     }
 
 }
@@ -12,7 +12,7 @@
 
 @media only screen and (min-width: 480px) {
     .main-intro {
-        padding: 100px 20px 40px 20px;
+        /*padding: 100px 20px 40px 20px;*/
     }
 }
 
@@ -54,9 +54,9 @@
     html {
         overflow-x: hidden;
     }
-    header {
+    header, .container {
         /*height: 30% !important;*/
-        width: auto;
+        width: 100%;
     }
     #filters {
         padding-top: 50px;
@@ -79,6 +79,9 @@
     .intro {
         /*width: 979px;*/
         width: 100%;
+    }
+    .main-intro {
+        width: 560px;
     }
 }
 

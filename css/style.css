@@ -2,7 +2,6 @@ html,
 body {
     height: 100%;
     width: 100%;
-    /*font-family: 'Poiret One', cursive;*/
     font-family: Arial;
 }
 
@@ -22,17 +21,14 @@ body {
     padding: 40px 40px 0px 40px;
 }
 
-header {
-    /*background: url('../img/comp/bg.jpg') no-repeat;*/
-    /*height: 40%;*/
-    width: auto;
-    /*background-size: cover;*/
-}
-
 .fade {
     -webkit-transition: opacity .0s linear;
     -o-transition: opacity .0s linear;
     transition: opacity .0s linear
+}
+
+header {
+    width: 100%;
 }
 
 .header {
@@ -41,11 +37,38 @@ header {
 
 .main-intro {
     padding: 100px 0 40px 0;
-    letter-spacing: 2px;
+}
+
+.main-intro > h4,
+.main-intro > a {
+    font-size: 14pt;
+    line-height: 20pt;
+}
+
+.main-intro > a {
+    display: inline-block;
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.main-intro > a:hover {
+    color: #bbb;
+}
+
+.main-intro > a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 5px;
 }
 
 .intro {
-    padding-top: 100px;
+    padding-top: 70px;
     min-height: 901px;
     width: 100%;
 }
@@ -205,148 +228,4 @@ a:focus {
 
 .fa:hover {
     color: #333;
-}
-
-
-/*//////*/
-
-nav {
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: #232323;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #cdcdcd;
-}
-
-#menuToggle {
-    display: block;
-    position: fixed;
-    top: 50px;
-    left: 50px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-#menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    /* hide this */
-    z-index: 2;
-    /* and place it over the hamburger */
-    -webkit-touch-callout: none;
-}
-
-
-/*
- * Just a quick hamburger
- */
-
-#menuToggle span {
-    display: block;
-    width: 22px;
-    height: 2px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #cdcdcd;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
-}
-
-#menuToggle span:hover {
-    background: #00000;
-}
-
-#menuToggle a {
-    padding-right: 6px;
-}
-
-#menuToggle span:first-child {
-    transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-}
-
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-
-#menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(1px, 4px);
-    background: #888888;
-}
-
-
-/*
- * But let's hide the middle one.
- */
-
-#menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-
-#menuToggle input:checked ~ span:nth-last-child(2) {
-    opacity: 1;
-    transform: rotate(-45deg) translate(0, -1px);
-}
-
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-
-#menu {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 0px;
-    padding: 50px;
-    padding-top: 68px;
-    background: rgba(152, 105, 105, 0);
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-}
-
-#menu li {
-    padding: 10px 0;
-    font-size: 14px;
-}
-
-
-/*
- * And let's fade it in from the left
- */
-
-#menuToggle input:checked ~ ul {
-    transform: scale(1.0, 1.0);
-    opacity: 1;
 }
