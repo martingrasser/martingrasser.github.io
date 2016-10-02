@@ -45,14 +45,18 @@
 
 <body>
     <!-- // -->
-    <div id="nav-wrapper">
-        <nav id="nav" class="container navbar navbar-fixed">
-            <p class="pull-left"><a href="#home">Martin Grasser</a></p>
-            <p class="pull-right"><a href="#about">About</a></p>
-            <p class="pull-right"> &nbsp;|&nbsp; </p>
-            <p class="pull-right"><a href="#projects">Projects</a></p>
-        </nav>
-    </div>
+    <nav role="navigation" class="nav-fixed">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu" class="list-inline">
+                <li><a href="">PROJECTS</a></li>
+                <li><a href="" id="backtotop">BACK TO TOP</a></li>
+            </ul>
+        </div>
+    </nav>
     <header>
         <div class="main-intro container text-center">
             <h4>The work below is a collection of art, design & photography arranged in chronological order.</h4>
@@ -225,11 +229,12 @@
     </div>
     <!-- // -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
     <script src="js/vendor/jquery.magnific-popup.min.js"></script>
     <script src="js/popup.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js'></script>
