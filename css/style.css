@@ -238,6 +238,5 @@ a:focus {
     right: 20px;
     bottom: 30px;
     position: fixed;
-    background-color: green;
-
+    z-index: 100;
 }

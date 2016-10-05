@@ -49,6 +49,9 @@
     .fa {
         display: none;
     }
+    #backtotop .fa {
+        display: block;
+    }
     .main-intro {
         padding: 100px 20px 40px 20px;
     }
