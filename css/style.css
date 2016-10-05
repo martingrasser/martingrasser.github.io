@@ -43,6 +43,7 @@ header {
 .main-intro > a {
     font-size: 14pt;
     line-height: 20pt;
+    letter-spacing: 0.5pt;
 }
 
 .main-intro > a {
@@ -228,4 +229,15 @@ a:focus {
 
 .fa:hover {
     color: #333;
+}
+
+/*///*/
+
+#backtotop {
+    color: black;
+    right: 20px;
+    bottom: 30px;
+    position: fixed;
+    background-color: green;
+
 }

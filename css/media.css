@@ -7,6 +7,11 @@
 
 }
 
+@media only screen and (min-width: 375px) {
+    .main-intro {
+        width: 380px;
+    }
+}
 
 /* Extra Small Devices, Phones */
 
@@ -16,13 +21,15 @@
     }
 }
 
+@media only screen and (min-width: 427px) {
+    .main-intro {
+        width: 574px;
+    }
+}
+
 @media (max-width: 540px) {
     .header {
         padding: 10px;
-    }
-    header {
-        /*height: 30% !important;*/
-        width: auto;
     }
     .but-cust {
         margin: 4px;
@@ -81,7 +88,7 @@
         width: 100%;
     }
     .main-intro {
-        width: 560px;
+        width: 572px;
     }
 }
 
