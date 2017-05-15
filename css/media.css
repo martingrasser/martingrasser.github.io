@@ -4,6 +4,7 @@
     .main-intro {
         padding: 60px 10px 40px 32px;
     }
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -121,6 +122,9 @@
     .mfp-arrow {
         -webkit-transform: scale(0.50);
         transform: scale(0.50);
+    }
+    .mfp-arrow-1 .fa {
+        display: none;
     }
 }
 
